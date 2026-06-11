@@ -1,199 +1,682 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <meta name="description" content="상암 유흥 꿀팁! 형들이 알려주는 상암 밤문화 노하우, 찐 리뷰, 놓치면 후회하는 핫플 리스트. 상암에서 놀면 이거 모르면 간다. 전화 010-6279-0862">
+    <meta name="keywords" content="상암 유흥, 상암 유흥 꿀팁, 상암 밤문화, 상암 술집, 상암 클럽, 상암 놀거리, 상암 데이트, 상암 핫플">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b06-sa-night-tip-1.vercel.app">
+    <meta property="og:title" content="상암 유흥 꿀팁 | 형이 알려주는 찐 노하우">
+    <meta property="og:description" content="상암 유흥 꿀팁! 형들이 알려주는 상암 밤문화 노하우, 찐 리뷰, 놓치면 후회하는 핫플 리스트. 상암에서 놀면 이거 모르면 간다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b06-sa-night-tip-1.vercel.app">
+    <meta property="og:image" content="https://t3b06-sa-night-tip-1.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="상암 유흥 꿀팁 | 형이 알려주는 찐 노하우">
+    <meta name="twitter:description" content="상암 유흥 꿀팁! 형들이 알려주는 상암 밤문화 노하우, 찐 리뷰, 놓치면 후회하는 핫플 리스트.">
+    <meta name="twitter:image" content="https://t3b06-sa-night-tip-1.vercel.app/twitter-image.jpg">
+    <title>홈 | 상암 유흥 꿀팁</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "상암 유흥 꿀팁",
+        "description": "상암에서 진짜 재미있게 노는 법, 형들이 다 알려준다. 상암 유흥 정보, 찐 리뷰, 꿀팁 대방출.",
+        "url": "https://t3b06-sa-night-tip-1.vercel.app",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        }
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        /* === RESET & BASE === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            background: #111111;
+            color: #ffff00;
+            font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+            line-height: 1.4;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 0;
+            word-wrap: break-word;
+        }
+        a {
+            color: #00ff41;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 2px;
+        }
+        a:hover {
+            color: #ffff00;
+            background: #111;
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            line-height: 0.95;
+        }
+        h1 {
+            font-size: clamp(3rem, 12vw, 6rem);
+            margin-bottom: 0.25em;
+            text-shadow: 0.04em 0.04em 0 #00ff41;
+        }
+        h2 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            border-bottom: 4px solid #ffff00;
+            padding-bottom: 0.2em;
+            margin-bottom: 0.6em;
+            display: inline-block;
+            transform: skew(-6deg);
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.4em;
+        }
+        p {
+            margin-bottom: 1em;
+            font-size: 1.05rem;
+        }
+        .text-accent {
+            color: #00ff41;
+        }
+        .text-secondary {
+            color: #ffff00;
+        }
+        .text-sm {
+            font-size: 0.85rem;
+        }
+        .text-lg {
+            font-size: 1.3rem;
+        }
+        .skew {
+            display: inline-block;
+            transform: skew(-8deg);
+        }
+        .rotate-neg {
+            transform: rotate(-2deg);
+        }
+        .rotate-pos {
+            transform: rotate(1.5deg);
+        }
+        /* === LAYOUT === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .full-bleed {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+        }
+        .dense-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+        .section-gap {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        /* === HEADER / NAV === */
+        header {
+            background: #111;
+            border-bottom: 4px solid #ffff00;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ffff00;
+            text-decoration: none;
+            letter-spacing: -0.03em;
+            transform: rotate(-1deg);
+        }
+        .logo span {
+            color: #00ff41;
+            background: #111;
+            padding: 0 8px;
+            border: 3px solid #00ff41;
+            display: inline-block;
+            margin-left: 4px;
+        }
+        nav ul {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        nav ul li a {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 6px 12px;
+            border: 2px solid transparent;
+            transition: 0.1s;
+        }
+        nav ul li a:hover {
+            border-color: #ffff00;
+            color: #ffff00;
+            background: #222;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+        .hamburger span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #ffff00;
+            border-radius: 0;
+        }
+        #nav-toggle {
+            display: none;
+        }
+        /* === HERO === */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            min-height: 70vh;
+            padding: 80px 24px 60px;
+            position: relative;
+            border-bottom: 6px solid #00ff41;
+            background: 
+                linear-gradient(135deg, rgba(0,255,65,0.08) 0%, transparent 50%),
+                linear-gradient(45deg, #111 0%, #1a1a00 100%);
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 200px;
+            height: 200px;
+            background: repeating-linear-gradient(
+                45deg,
+                #ffff00 0px,
+                #ffff00 4px,
+                transparent 4px,
+                transparent 8px
+            );
+            opacity: 0.2;
+            transform: rotate(10deg);
+            pointer-events: none;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: #00ff41;
+            color: #111;
+            padding: 4px 16px;
+            font-weight: 900;
+            font-size: 1rem;
+            transform: skew(-10deg) rotate(-3deg);
+            margin-bottom: 16px;
+            border: 3px solid #ffff00;
+        }
+        .hero h1 {
+            max-width: 900px;
+        }
+        .hero .sub {
+            font-size: 1.4rem;
+            color: #cccccc;
+            border-left: 6px solid #00ff41;
+            padding-left: 16px;
+            margin: 20px 0 32px;
+            max-width: 600px;
+        }
+        .hero .cta-phone {
+            display: inline-block;
+            background: #ffff00;
+            color: #111;
+            padding: 14px 32px;
+            font-weight: 900;
+            font-size: 1.4rem;
+            text-decoration: none;
+            border: 4px solid #111;
+            box-shadow: 6px 6px 0 #00ff41;
+            transition: 0.1s;
+            transform: rotate(-1deg);
+        }
+        .hero .cta-phone:hover {
+            box-shadow: 0 0 0 0 #00ff41;
+            transform: rotate(0deg) translate(4px, 4px);
+            background: #00ff41;
+            color: #111;
+        }
+        /* === SECTION COMMON === */
+        section {
+            padding: 40px 24px;
+            border-bottom: 4px solid #ffff00;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .section-title .emoji-big {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+        /* === CARDS (UGC Reviews) === */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .review-card {
+            background: #1a1a1a;
+            border: 4px solid #ffff00;
+            padding: 20px;
+            transform: rotate(var(--rot, 0deg));
+            transition: 0.1s;
+            position: relative;
+        }
+        .review-card:nth-child(odd) {
+            --rot: -1.5deg;
+        }
+        .review-card:nth-child(even) {
+            --rot: 1deg;
+        }
+        .review-card:hover {
+            transform: rotate(0deg) scale(1.02);
+            border-color: #00ff41;
+        }
+        .review-card .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 2px dashed #333;
+            padding-bottom: 8px;
+        }
+        .review-card .review-nick {
+            font-weight: 900;
+            font-size: 1.1rem;
+            color: #00ff41;
+        }
+        .review-card .review-date {
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .review-card .review-stars {
+            color: #ffff00;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+        }
+        .review-card .review-text {
+            margin-top: 8px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #ddd;
+        }
+        /* === TIPS LIST === */
+        .tip-list {
+            display: grid;
+            gap: 16px;
+        }
+        .tip-item {
+            border-left: 6px solid #00ff41;
+            padding: 16px 20px;
+            background: #0d0d0d;
+            transform: skew(-2deg);
+            border-bottom: 3px solid #ffff00;
+        }
+        .tip-item:nth-child(2n) {
+            transform: skew(2deg);
+            border-left-color: #ffff00;
+            border-bottom-color: #00ff41;
+        }
+        .tip-item h3 {
+            margin-bottom: 4px;
+            font-size: 1.2rem;
+            transform: skew(2deg);
+        }
+        .tip-item p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        /* === FOOTER === */
+        footer {
+            background: #0a0a0a;
+            border-top: 6px solid #00ff41;
+            padding: 32px 24px 24px;
+            text-align: center;
+        }
+        footer .footer-phone {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #ffff00;
+            display: block;
+            margin: 16px 0;
+        }
+        footer .footer-phone a {
+            color: #ffff00;
+            text-decoration: none;
+            border: 3px solid #ffff00;
+            padding: 8px 24px;
+            display: inline-block;
+            transition: 0.1s;
+        }
+        footer .footer-phone a:hover {
+            background: #ffff00;
+            color: #111;
+        }
+        footer .copyright {
+            margin-top: 24px;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 2px solid #222;
+            padding-top: 16px;
+        }
+        /* === DECORATIVE === */
+        .texture-bg {
+            background-image: 
+                linear-gradient(45deg, #1a1a1a 25%, transparent 25%),
+                linear-gradient(-45deg, #1a1a1a 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #1a1a1a 75%),
+                linear-gradient(-45deg, transparent 75%, #1a1a1a 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        .asymmetric-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 40px -24px;
+            padding: 32px 24px;
+            background: #0d0d0d;
+            border-top: 4px solid #ffff00;
+            border-bottom: 4px solid #00ff41;
+            transform: rotate(1deg);
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+        .asymmetric-block > * {
+            flex: 1 1 280px;
+        }
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            header {
+                padding: 12px 16px;
+                flex-wrap: wrap;
+            }
+            .hamburger {
+                display: flex;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #111;
+                border-top: 4px solid #ffff00;
+                padding: 16px 0;
+                gap: 8px;
+                margin-top: 12px;
+            }
+            #nav-toggle:checked ~ nav ul {
+                display: flex;
+            }
+            nav ul li a {
+                display: block;
+                padding: 10px 16px;
+                font-size: 1.2rem;
+                border: none;
+                border-left: 4px solid transparent;
+            }
+            nav ul li a:hover {
+                border-left-color: #00ff41;
+                background: #1a1a00;
+            }
+            .hero {
+                min-height: 50vh;
+                padding: 60px 16px 40px;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero .sub {
+                font-size: 1.1rem;
+            }
+            section {
+                padding: 32px 16px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            .review-card {
+                transform: none !important;
+            }
+            .tip-item {
+                transform: none !important;
+            }
+            .asymmetric-block {
+                transform: none;
+                width: 100%;
+                left: 0;
+                margin-left: 0;
+                margin-right: 0;
+                border-radius: 0;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .cta-phone {
+                font-size: 1.2rem;
+                padding: 12px 20px;
+            }
+            .dense-grid {
+                grid-template-columns: 1fr;
+            }
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* === HELPER === */
+        .flex {
+            display: flex;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .gap-16 {
+            gap: 16px;
+        }
+        .mt-16 {
+            margin-top: 16px;
+        }
+        .mb-16 {
+            margin-bottom: 16px;
+        }
+        .no-underline {
+            text-decoration: none;
+        }
+        .border-box {
+            border: 4px solid #ffff00;
+            padding: 24px;
+            background: #0d0d0d;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
     <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+        <a href="/" class="logo">상암<span>꿀팁</span></a>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="hamburger" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#tips">꿀팁</a></li>
+                <li><a href="#reviews">리뷰</a></li>
+                <li><a href="#hot">핫플</a></li>
+                <li><a href="tel:010-6279-0862">전화</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
+        <!-- HERO -->
+        <section class="hero full-bleed" id="home">
+            <div class="badge">🔥 2025 상암 찐 노하우</div>
+            <h1>상암 유흥<br><span class="text-accent">꿀팁</span> 대방출</h1>
+            <div class="sub">
+                형이 직접 발로 뛰고 겪은 상암 밤문화 꿀팁만 모았다.<br>
+                이거 모르면 상암에서 놀았다고 말하지 마셈.
+            </div>
+            <a href="tel:010-6279-0862" class="cta-phone">📞 지금 전화: 010-6279-0862</a>
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                <span style="font-size: 2rem;">🍻</span>
+                <span style="font-size: 2rem;">🎤</span>
+                <span style="font-size: 2rem;">🕺</span>
+                <span style="font-size: 2rem;">✨</span>
+            </div>
+        </section>
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
+        <!-- TIPS SECTION -->
+        <section id="tips" class="container section-gap">
+            <div class="section-title">
+                <span class="emoji-big">💡</span>
+                <h2>상암에서 놀 때<br>꼭 알아야 할 꿀팁</h2>
+            </div>
+            <div class="dense-grid tip-list">
+                <div class="tip-item">
+                    <h3>🥇 첫째, 시간을 거꾸로 써라</h3>
+                    <p>상암은 10시 이후가 진짜 시작이야. 근데 8시쯤 미리 가서 자리 잡아야 입구에서 안 기다려. 형은 항상 7시30분에 도착해서 맥주 한잔 하면서 기다려. 그럼 나중에 줄 안 서도 됨.</p>
+                </div>
+                <div class="tip-item">
+                    <h3>🥈 둘째, 술값 아끼는 꼼수</h3>
+                    <
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
       
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-11">2026-06-11</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">관점 중심의 가격대별 원가 구조 분석</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 메타정보포스트 기획 테마: 상암 유흥 꿀팁 선택 전에 확인할 체크리 리스트와 실패 사례 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 자세한 내용 보기 아, 진짜... 가격 대비 원가는 어떻게 결정되는 거야? 사장이 메뉴별로</p>
       </div>
-    </footer>
+      <a href="posts/checklist-001-uly4pr.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>
