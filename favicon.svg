@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
-  <metadata>BPaaS site identity fce294c37833187e</metadata>
-  <rect width="64" height="64" rx="8" fill="hsl(298 68% 24%)"/>
-  <path d="M35 0h29v64H21Z" fill="hsl(349 75% 54%)" opacity="0.82"/>
-  <g transform="rotate(295 32 32)" opacity="0.42"><circle cx="32" cy="32" r="17" fill="none" stroke="#ffffff" stroke-width="7"/></g>
-  <text x="32" y="39" text-anchor="middle" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">SN</text>
+  <title>상암 유흥 꿀팁</title>
+  <rect width="64" height="64" rx="16" fill="hsl(298 67% 20%)"/>
+  <g transform="rotate(270 32 32)"><path d="M32 13 50 23v18L32 51 14 41V23Z" fill="none" stroke="hsl(298 24% 96%)" stroke-width="7" stroke-linejoin="round"/><circle cx="32" cy="32" r="6" fill="hsl(11 68% 58%)"/></g>
 </svg>
